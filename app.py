@@ -106,7 +106,7 @@ for gift, cost in REWARDS.items():
 progress_value = min(data["points"] / 300, 1.0)
 st.progress(progress_value, text="距离终极大奖还有多远")
 # --- 开发者测试区 (仅在暗号为某个特殊值时显示) ---
-if password == "qsir118": # 比如 123456
+if password == "admin1": # 比如 123456
     st.divider()
     st.write("🛠️ 管理员模式")
     if st.button("🚀 强行+100积分 (测试用)"):
