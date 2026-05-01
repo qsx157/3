@@ -141,8 +141,8 @@ st.progress(progress_value, text="距离终极大奖还有多远")
 if st.session_state.current_user == "admin":
     st.divider()
     st.write("🛠️ 管理员模式 (测试专用)")
-    if st.button("🚀 强行+100积分 (点我充值)"):
-        data["points"] += 100
+    if st.button("🚀 强行+10积分 (点我充值)"):
+        data["points"] += 10
         update_remote_data(data)
         st.session_state.cloud_data = data
         st.success("余额已强行充值！")
